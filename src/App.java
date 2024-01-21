@@ -3,11 +3,11 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.SourceDataLine;
 
-// converting PCM unsigned mono 8-bit 20KHz to 8-levels volume PWM test
+// converting PCM unsigned mono 8-bit 20KHz to equivalent 8-levels volume PWM test
 
 // formulas:
 // human max audible frequency = 20000hz
-// pwm_player_sample_rate / 20000 = 8 levels of volume
+// pwm_player_sample_rate / 20000 = equivalent 8 levels of volume
 // pwm_player_sample_rate = 160000 hz
 public class App {
     public static void main(String[] args) throws Exception {
